@@ -2,9 +2,7 @@ namespace Condez_SIS_v3
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
+        public static string ConnectionString = @"Server=DESKTOP-G6J8QFP\SQLEXPRESS01;Database=DaveDB;Trusted_Connection=True;TrustServerCertificate=True;";
         [STAThread]
         static void Main()
         {

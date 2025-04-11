@@ -29,6 +29,19 @@
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle13 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
             button5 = new Button();
             label1 = new Label();
@@ -59,6 +72,10 @@
             textBox8 = new TextBox();
             label15 = new Label();
             dataGridView1 = new DataGridView();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
@@ -70,10 +87,6 @@
             Column9 = new DataGridViewTextBoxColumn();
             Column10 = new DataGridViewTextBoxColumn();
             Column11 = new DataGridViewImageColumn();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tableLayoutPanel1.SuspendLayout();
@@ -449,74 +462,27 @@
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle1.BackColor = Color.Transparent;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Control;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8, Column9, Column10, Column11 });
             dataGridView1.Dock = DockStyle.Bottom;
+            dataGridView1.EditMode = DataGridViewEditMode.EditOnKeystroke;
             dataGridView1.Location = new Point(0, 344);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(1174, 174);
             dataGridView1.TabIndex = 6;
-            // 
-            // Column1
-            // 
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopLeft;
-            Column1.DefaultCellStyle = dataGridViewCellStyle1;
-            Column1.HeaderText = "No";
-            Column1.Name = "Column1";
-            Column1.Width = 50;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Name";
-            Column2.Name = "Column2";
-            Column2.Width = 120;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Year-Major";
-            Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Course";
-            Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Birthday";
-            Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "Contact Number";
-            Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            Column7.HeaderText = "Address";
-            Column7.Name = "Column7";
-            Column7.Width = 130;
-            // 
-            // Column8
-            // 
-            Column8.HeaderText = "Contact Person";
-            Column8.Name = "Column8";
-            // 
-            // Column9
-            // 
-            Column9.HeaderText = "Contact Person Address";
-            Column9.Name = "Column9";
-            Column9.Width = 130;
-            // 
-            // Column10
-            // 
-            Column10.HeaderText = "Contact Person Number";
-            Column10.Name = "Column10";
-            // 
-            // Column11
-            // 
-            Column11.HeaderText = "StudentProfile";
-            Column11.Name = "Column11";
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button1
             // 
@@ -574,6 +540,111 @@
             button4.TabIndex = 10;
             button4.Text = "AddNew";
             button4.UseVisualStyleBackColor = false;
+            // 
+            // Column1
+            // 
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle3.BackColor = Color.Transparent;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            Column1.DefaultCellStyle = dataGridViewCellStyle3;
+            Column1.HeaderText = "No";
+            Column1.Name = "Column1";
+            Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            dataGridViewCellStyle4.BackColor = Color.Transparent;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = Color.Black;
+            Column2.DefaultCellStyle = dataGridViewCellStyle4;
+            Column2.HeaderText = "Name";
+            Column2.Name = "Column2";
+            Column2.Width = 120;
+            // 
+            // Column3
+            // 
+            dataGridViewCellStyle5.BackColor = Color.Transparent;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9.75F);
+            dataGridViewCellStyle5.ForeColor = Color.Black;
+            Column3.DefaultCellStyle = dataGridViewCellStyle5;
+            Column3.HeaderText = "Year-Major";
+            Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            dataGridViewCellStyle6.BackColor = Color.Transparent;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9.75F);
+            dataGridViewCellStyle6.ForeColor = Color.Black;
+            Column4.DefaultCellStyle = dataGridViewCellStyle6;
+            Column4.HeaderText = "Course";
+            Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            dataGridViewCellStyle7.BackColor = Color.Transparent;
+            dataGridViewCellStyle7.Font = new Font("Segoe UI", 9.75F);
+            dataGridViewCellStyle7.ForeColor = Color.Black;
+            Column5.DefaultCellStyle = dataGridViewCellStyle7;
+            Column5.HeaderText = "Birthday";
+            Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            dataGridViewCellStyle8.BackColor = Color.Transparent;
+            dataGridViewCellStyle8.Font = new Font("Segoe UI", 9.75F);
+            dataGridViewCellStyle8.ForeColor = Color.Black;
+            Column6.DefaultCellStyle = dataGridViewCellStyle8;
+            Column6.HeaderText = "Contact Number";
+            Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            dataGridViewCellStyle9.BackColor = Color.Transparent;
+            dataGridViewCellStyle9.Font = new Font("Segoe UI", 9.75F);
+            dataGridViewCellStyle9.ForeColor = Color.Black;
+            Column7.DefaultCellStyle = dataGridViewCellStyle9;
+            Column7.HeaderText = "Address";
+            Column7.Name = "Column7";
+            Column7.Width = 130;
+            // 
+            // Column8
+            // 
+            dataGridViewCellStyle10.BackColor = Color.Transparent;
+            dataGridViewCellStyle10.Font = new Font("Segoe UI", 9.75F);
+            dataGridViewCellStyle10.ForeColor = Color.Black;
+            Column8.DefaultCellStyle = dataGridViewCellStyle10;
+            Column8.HeaderText = "Contact Person";
+            Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            dataGridViewCellStyle11.BackColor = Color.Transparent;
+            dataGridViewCellStyle11.Font = new Font("Segoe UI", 9.75F);
+            dataGridViewCellStyle11.ForeColor = Color.Black;
+            Column9.DefaultCellStyle = dataGridViewCellStyle11;
+            Column9.HeaderText = "Contact Person Address";
+            Column9.Name = "Column9";
+            Column9.Width = 130;
+            // 
+            // Column10
+            // 
+            dataGridViewCellStyle12.BackColor = Color.Transparent;
+            dataGridViewCellStyle12.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle12.ForeColor = Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = Color.Black;
+            Column10.DefaultCellStyle = dataGridViewCellStyle12;
+            Column10.HeaderText = "Contact Person Number";
+            Column10.Name = "Column10";
+            // 
+            // Column11
+            // 
+            dataGridViewCellStyle13.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = Color.Transparent;
+            dataGridViewCellStyle13.NullValue = resources.GetObject("dataGridViewCellStyle13.NullValue");
+            Column11.DefaultCellStyle = dataGridViewCellStyle13;
+            Column11.HeaderText = "StudentProfile";
+            Column11.Name = "Column11";
             // 
             // Form1
             // 
@@ -638,6 +709,11 @@
         private Label label14;
         private Label label15;
         private DataGridView dataGridView1;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
@@ -649,10 +725,5 @@
         private DataGridViewTextBoxColumn Column9;
         private DataGridViewTextBoxColumn Column10;
         private DataGridViewImageColumn Column11;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
     }
 }
